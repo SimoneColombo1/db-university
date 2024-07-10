@@ -1,0 +1,32 @@
+DB University
+
+
+Query 1: SELECT * FROM students WHERE YEAR(date_of_birth) = 1990; 
+
+Query 2: SELECT * FROM courses WHERE cfu > 10; 
+
+Query 3: SELECT * FROM students WHERE YEAR(CURDATE()) - YEAR(date_of_birth) > 30; 
+
+Query 4: SELECT * FROM courses WHERE period = 1 AND year = 1; 
+
+Query 5: SELECT * FROM exams 
+WHERE DATE(date) = '2020-06-20' AND TIME(hour) > '14:00:00';
+
+
+Query 6: SELECT * FROM degrees WHERE level = 'magistrale';
+
+Query 7: SELECT COUNT(*) AS numero_dipartimenti FROM departments; 
+
+Query 8: SELECT COUNT(*) AS insegnanti_senza_telefono FROM teachers WHERE phone IS NULL;
+
+Query 9: INSERT INTO students (name, surname, date_of_birth, degree_id)
+VALUES ('gino', 'ginetto', '2004-12-13', RAND());
+
+
+Query 10: UPDATE teachers
+SET office_number = 126
+WHERE name = 'Pietro' AND surname = 'Rizzo';
+
+
+Query 11: DELETE FROM students 
+WHERE name = 'gino' AND surname = 'ginettio' AND datae_of_birth = '2004-12-13';
