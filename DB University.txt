@@ -30,3 +30,6 @@ WHERE name = 'Pietro' AND surname = 'Rizzo';
 
 Query 11: DELETE FROM students 
 WHERE name = 'gino' AND surname = 'ginettio' AND datae_of_birth = '2004-12-13';
+
+
+
